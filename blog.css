@@ -1,0 +1,48 @@
+body {
+  background-image: url(images/sun1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+}
+
+.right {
+  gap: 15px;
+  padding: 0px 20px;
+  color: wheat;
+  height: 75px;
+}
+
+h1 span {
+  display: block;
+  color: bisque;
+}
+
+.left {
+  padding: 0px 20px;
+}
+a {
+  color: bisque;
+  font-size: larger;
+  font-weight: bolder;
+}
