@@ -1,14 +1,30 @@
 body {
-  background-image: url(images/sun1.png);
+  background-image: url(images/water2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-img {
+/* video {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  object-fit: cover;
+  z-index: -1;
+} */
+
+.logo {
   height: 80px;
   width: 80px;
+}
+
+.intro {
+  height: 500px;
+  width: 300px;
+  padding: 20px;
 }
 
 .header {
@@ -22,8 +38,6 @@ img {
 .right {
   display: flex;
   align-items: center;
-  background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15px);
 }
 
 .right {
@@ -42,7 +56,63 @@ h1 span {
   padding: 0px 20px;
 }
 a {
-  color: bisque;
+  color: salmon;
   font-size: larger;
   font-weight: bolder;
+}
+
+#intro-field {
+  width: 800px;
+  margin-top: 400px;
+}
+main {
+  display: flex;
+}
+
+.right p {
+  line-height: 1.5;
+  color: cyan;
+  background-color: rgba(o, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  font-size: 18px;
+}
+
+legend {
+  color: salmon;
+  font-size: large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+
+#line {
+  height: 2px;
+  width: 100%;
+  color: wheat;
+  background-color: azure;
+  margin-top: -70px;
+}
+
+.about {
+  background-color: salmon;
+  display: flex;
+  padding: 20px;
+}
+
+.about-content {
+  background-color: salmon;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-img img {
+  height: 700px;
+  width: 400px;
+}
+
+#about-field {
+  width: 700px;
+}
+
+#content-legend {
+  color: bisque;
 }

@@ -1,8 +1,8 @@
 const message = [
-  "Welcome to my blog",
+  "Welcome to My Blog",
   "Blog with Phila",
-  "Happy you're here",
-  "Don't forget to like and comment!",
+  "Happy you're Here",
+  "Can't Wait to See You Again",
 ];
 
 const heading = document.getElementById("message");
@@ -16,4 +16,4 @@ function changeMessage() {
   }
   heading.textContent = message[currentMessage];
 }
-setInterval(changeMessage, 10000);
+setInterval(changeMessage, 3000);
