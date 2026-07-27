@@ -1,4 +1,15 @@
-name: Blog CI
+steps:
+  - name: Checkout Repository
+    uses: actions/checkout@v4
+
+  - name: List Project Files
+    run: ls -R
+
+  - name: Validate HTML Exists
+    run: test -f index.html
+
+  - name: Finished
+    run: echo "Blog validation successful!"name: Blog CI
 
 on:
   push:
@@ -10,8 +21,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Download Repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Workflow Started
-        run: echo "Your GitHub Action is working!"
+      - name: List Project Files
+        run: ls -R
+
+      - name: Validate HTML Exists
+        run: test -f index.html
+
+      - name: Finished
+        run: echo "Blog validation successful!"
