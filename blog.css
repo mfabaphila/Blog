@@ -6,45 +6,36 @@ body {
   background-attachment: fixed;
 }
 
-/* video {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  object-fit: cover;
-  z-index: -1;
-} */
-
 .logo {
-  height: 80px;
   width: 80px;
-}
-
-.intro {
-  height: 500px;
-  width: 300px;
-  padding: 20px;
+  height: 80px;
 }
 
 .header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.left,
-.right {
+.header-left {
   display: flex;
   align-items: center;
+  gap: 15px;
+  padding: 0 20px;
+  height: 75px;
 }
 
-.right {
+.header-nav {
+  display: flex;
   gap: 15px;
-  padding: 0px 20px;
-  color: wheat;
-  height: 75px;
+  padding: 0 20px;
+}
+
+.header-nav a {
+  color: salmon;
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 h1 span {
@@ -52,67 +43,64 @@ h1 span {
   color: bisque;
 }
 
-.left {
-  padding: 0px 20px;
-}
-a {
-  color: salmon;
-  font-size: larger;
-  font-weight: bolder;
-}
-
-#intro-field {
-  width: 800px;
-  margin-top: 400px;
-}
 main {
   display: flex;
 }
 
-.right p {
-  line-height: 1.5;
-  color: cyan;
-  background-color: rgba(o, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  font-size: 18px;
-}
-
-legend {
-  color: salmon;
-  font-size: large;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 600;
-}
-
-#line {
-  height: 2px;
-  width: 100%;
-  color: wheat;
-  background-color: azure;
-  margin-top: -70px;
-}
-
-.about {
-  background-color: salmon;
-  display: flex;
+.intro-image {
   padding: 20px;
 }
 
-.about-content {
+.intro {
+  width: 300px;
+  height: 500px;
+}
+
+.intro-content {
+  width: 800px;
+  margin-top: 400px;
+  border: 2px solid salmon;
+  border-radius: 8px;
+  padding: 25px;
+  margin-top: -0.1px;
+}
+
+.section-title {
+  color: salmon;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.intro-content p {
+  color: cyan;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+hr {
+  margin: 50px 0;
+  border: 1px solid white;
+}
+
+.about {
+  display: flex;
   background-color: salmon;
+  padding: 20px;
+}
+
+.about-image img {
+  width: 400px;
+  height: 700px;
+}
+
+.about-content {
+  width: 700px;
+  padding: 20px;
   font-size: 18px;
   line-height: 1.5;
+  border: 2px solid bisque;
+  border-radius: 8px;
 }
 
-.about-img img {
-  height: 700px;
-  width: 400px;
-}
-
-#about-field {
-  width: 700px;
-}
-
-#content-legend {
+.about-content .section-title {
   color: bisque;
 }

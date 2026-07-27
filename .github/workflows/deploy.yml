@@ -1,0 +1,17 @@
+name: Blog CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download Repository
+        uses: actions/checkout@v4
+
+      - name: Workflow Started
+        run: echo "Your GitHub Action is working!"
