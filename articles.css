@@ -1,0 +1,37 @@
+article {
+  background-color: #feedea;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.happiness,
+.stillness {
+  width: 600px;
+  height: 40px;
+}
+img {
+  height: 100px;
+  width: 200px;
+}
+
+.summary {
+  width: 350px;
+  border: 1px solid salmon;
+  height: 130px;
+  margin-left: -20px;
+}
+
+.intro {
+  display: flex;
+}
+
+h3 {
+  color: salmon;
+  display: inline-block;
+  background-color: azure;
+}
+p {
+  margin-top: -10px;
+}
