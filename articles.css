@@ -6,21 +6,15 @@ article {
   justify-content: center;
 }
 
-.happiness,
-.stillness {
-  width: 600px;
-  height: 40px;
-}
 img {
   height: 100px;
   width: 200px;
 }
 
-.summary {
+.blog-card {
   width: 350px;
-  border: 1px solid salmon;
-  height: 130px;
-  margin-left: -20px;
+  background: rgb(243, 195, 195);
+  border-radius: 20px;
 }
 
 .intro {
