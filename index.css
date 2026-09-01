@@ -48,6 +48,9 @@ body {
   backdrop-filter: blur(5px);
   height: 80px;
   margin-top: -280px;
+  width: 500px;
+
+  justify-content: center;
 }
 #logo {
   height: 80px;
