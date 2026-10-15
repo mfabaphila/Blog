@@ -18,3 +18,15 @@ const changeMessage = () => {
 };
 
 setInterval(changeMessage, 2000);
+
+const weatherElement = document.getElementById("weather")
+
+window.onload = function(){
+
+  fetch("https://api.open-meteo.com/v1/forecast?latitude=-33.9249&longitude=18.4241&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,precipitation")
+  .then((results)=>results.json())
+  .then((data)=>{
+    weatherElement.textContent= data.current.temperature_2m + "°C"
+  })
+
+}
