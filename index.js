@@ -5,6 +5,8 @@ const message = [
   "Have a say?",
   "Get in touch",
   "Hope to see you soon",
+  "Hate what you see?",
+  "Just press Like"
 ];
 
 let currentMessage = 0;
